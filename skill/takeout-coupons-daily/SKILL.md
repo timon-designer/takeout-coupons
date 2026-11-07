@@ -42,7 +42,7 @@ metadata:
 
 ## 回退：逐条消息模式（仅当发布链路不可用）
 
-脚本 `~/.hermes/tasks/takeout-coupons/coupons_multisend.py`：图例 1 条 + 每券 1 条，间隔 1.2s。
+回退脚本随用随建：图例 1 条 + 每券 1 条，间隔 ≥2s。
 **iLink 连发约 8 条必撞配额**（session not ready）——熔断停止，请涛哥回任意消息刷新会话，按已发条数续发，绝不从头重发。
 
 ## Pitfalls

@@ -5,6 +5,15 @@ A daily-updated page of takeout coupon codes. Open the page → tap "复制口�
 
 **线上页面 Live page**：https://timon-designer.github.io/takeout-coupons/
 
+## 来源与致谢 Credits
+
+- **券数据**：公共聚合项目 [moooai/takeout-coupon](https://github.com/moooai/takeout-coupon)（每日定时任务拉取的就是它的接口）。本仓库不含券源代码，仅消费其公开输出。
+  Coupon data comes from the open-source aggregator above; this repo only consumes its public API output.
+- **页面与自动更新流程**：本仓库原创（模板渲染 + GitHub Actions 定时任务 + GitHub Pages，均为通用做法，无第三方模板）。
+  Page template and the auto-update pipeline are original to this repo.
+- **Agent 侧技能**（给 AI 助手用的每日任务流程 SKILL.md）存放在作者本人的私有技能库，不在此公开仓库内。
+  The agent-side skill file lives in the author's private skills repo, not here.
+
 ## 使用 How to use
 
 1. 打开上面的页面。Open the page above.

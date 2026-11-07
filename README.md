@@ -1,47 +1,49 @@
-# 今日外卖券 · Takeout Coupons
+# Takeout Coupons
 
-每日自动更新的外卖平台领券口令页面。打开网页 → 点「复制口令」→ 打开对应 App 领取。
-A daily-updated page of takeout coupon codes. Open the page → tap "复制口令" (Copy code) → open the matching app to claim.
+English | [简体中文](README.zh-CN.md)
 
-**线上页面 Live page**：https://timon-designer.github.io/takeout-coupons/
+A daily-updated page of takeout coupon codes for Meituan / Taobao–Ele.me / JD.
+Open the page → tap the copy button → open the matching app to claim.
 
-## 来源与致谢 Credits
+**Live page**: https://timon-designer.github.io/takeout-coupons/
 
-- **券数据**：公共聚合项目 [moooai/takeout-coupon](https://github.com/moooai/takeout-coupon)（每日定时任务拉取的就是它的接口）。本仓库不含券源代码，仅消费其公开输出。
-  Coupon data comes from the open-source aggregator above; this repo only consumes its public API output.
-- **页面与自动更新流程**：本仓库原创（模板渲染 + GitHub Actions 定时任务 + GitHub Pages，均为通用做法，无第三方模板）。
-  Page template and the auto-update pipeline are original to this repo.
-- **Agent 侧技能**（给 AI 助手用的每日任务流程 SKILL.md）存放在作者本人的私有技能库，不在此公开仓库内。
-  The agent-side skill file lives in the author's private skills repo, not here.
+## How to use
 
-## 使用 How to use
+1. Open the live page above.
+2. Tap **复制口令** (copy code) on any coupon — the full code goes to your clipboard.
+3. Open Meituan / Taobao / JD — the app detects the code from the clipboard and offers the coupon.
 
-1. 打开上面的页面。Open the page above.
-2. 点任意一张券的「复制口令」按钮，口令进入剪贴板。Tap any coupon's copy button — the code goes to your clipboard.
-3. 打开美团 / 淘宝 / 京东 App，会自动识别剪贴板里的口令并弹出领取。Open Meituan / Taobao / JD — the app detects the full code from your clipboard and offers the coupon.
+> The page UI is in Chinese. Only two button labels matter: 复制口令 = copy code, 已复制 ✓ = copied.
+> Gray notes = restricted entries (new users only / night hours / student) or paid bundles — marked as such, do not treat paid entries as free coupons.
 
-> English: codes must be copied in full and pasted-detected inside the Chinese apps (Meituan, Taobao, JD). The page is in Chinese; button labels mean: 复制口令 = copy code, 已复制 = copied, 灰色小字 = restrictions (new users only / time-limited / paid entry — marked, do not treat paid ones as free coupons).
+## How it works
 
-## 它是怎么工作的 How it works
+- A GitHub Actions workflow runs daily at 07:00 Beijing time, fetches codes from a public aggregator API, rebuilds `index.html`, and auto-commits. GitHub Pages redeploys automatically.
+- No accounts, credentials, or secrets are involved — the repo only consumes a public API.
 
-- GitHub Actions 每天北京时间 07:00 运行 [`scripts/fetch_and_build.py`](scripts/fetch_and_build.py)，从公共聚合接口拉取当天口令，重建 `index.html` 并自动提交。本仓库不含任何账号、登录态或密钥。
-- GitHub Actions runs daily at 07:00 Beijing time, fetches codes from a public aggregator API ([moooai/takeout-coupon](https://github.com/moooai/takeout-coupon)), rebuilds `index.html` and auto-commits. No accounts, credentials or secrets involved.
-- 口令来自第三方聚合渠道，可能带推广归因；**入口 ≠ 已领到**，能否领取与实际面额以 App 内为准。
-- Codes come from a third-party aggregator and may carry referral attribution. **An entry is not a claimed coupon** — eligibility and value are subject to each app.
+## Credits
 
-## 目录 Structure
+- **Coupon data**: [moooai/takeout-coupon](https://github.com/moooai/takeout-coupon). This repo only consumes its public API output and ships no coupon-source code.
+- **Page template & auto-update pipeline**: original to this repo (plain template rendering + scheduled GitHub Actions + GitHub Pages).
+- **Agent-side skill** (an `SKILL.md` task file for AI assistants): kept in the author's private skills repo, not published here.
+
+## Structure
 
 ```
-scripts/fetch_and_build.py   拉取 + 重建页面 fetch & rebuild
-data/latest.json             最新原始数据 latest raw data（含每日归档 daily archives）
-.github/workflows/update.yml 每日定时任务 daily cron workflow
-index.html                   生成的页面 generated page（勿手改 do not edit by hand）
+scripts/fetch_and_build.py    fetch codes & rebuild the page
+data/latest.json              latest raw data (daily archives kept)
+.github/workflows/update.yml  daily cron workflow
+index.html                    generated page (do not edit by hand)
 ```
 
-## 本地运行 Run locally
+## Run locally
 
 ```bash
 python3 scripts/fetch_and_build.py
 ```
 
-需要 Python 3.9+，无第三方依赖。Python 3.9+ only, zero dependencies.
+Python 3.9+, zero dependencies.
+
+## Disclaimer
+
+Codes come from a third-party aggregator and may carry referral attribution. An entry is **not** a claimed coupon — eligibility and actual value are subject to each app.

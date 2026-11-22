@@ -1,0 +1,97 @@
+{
+ "美团隐藏外卖券列表": [
+  {
+   "title": "美团外卖节(主推)🔥🔥",
+   "coupon_code": "❤️复制整条信息，打开👉美团👈 http:/💰giODRiMDNjYTQ💰",
+   "guideline": "手机先复制优惠券代码，打开美团APP自动领取"
+  },
+  {
+   "title": "美团外卖甄选好店🔥🔥",
+   "coupon_code": "❤️复制整条信息，打开👉美团👈 http:/💰hlMTE3Yjk1YzE💰",
+   "guideline": "手机先复制优惠券代码，打开美团APP自动领取"
+  },
+  {
+   "title": "美团外卖【品牌商品券🔥🔥】",
+   "coupon_code": "❤️复制整条信息，打开👉美团👈 http:/💰iuZDcyNGFhZGU💰",
+   "guideline": "手机先复制完整的优惠券代码，打开美团APP自动领取"
+  },
+  {
+   "title": "美团外卖【神券包】 9.9元购360元年卡",
+   "coupon_code": "❤️复制整条信息，打开👉美团👈 http:/💰iuZDcyNGFhZGU💰",
+   "guideline": "手机先复制完整的优惠券代码，打开美团APP自动领取"
+  }
+ ],
+ "饿了么/淘宝闪购隐藏外卖券列表": [
+  {
+   "title": "淘宝闪购-叠红包🔥🔥",
+   "coupon_code": "￥9ymw6ak7P0y￥/ HU7405 【闪购品牌日 单单有福利】",
+   "guideline": "请复制完整的优惠券代码，打开淘宝APP领取"
+  },
+  {
+   "title": "淘宝闪购-天天领红包(全场景, 最高抢66元大额红包)",
+   "coupon_code": "￥A4Pk6akRoCp￥/ HU7405 【天天领红包（全场景通用）】",
+   "guideline": "请复制完整的优惠券代码，打开淘宝APP领取"
+  },
+  {
+   "title": "淘宝闪购-新客专享",
+   "coupon_code": "09 HU7405 1:/LmRl6ak9Qjb£欢闪购大额满减红包",
+   "guideline": "请复制完整的优惠券代码，打开淘宝APP领取"
+  },
+  {
+   "title": "淘宝闪购-宵夜专场",
+   "coupon_code": "0复zんι此段666:/＄6akQpq4＄~.淘宝闪购APP【闪购夜宵专享会场】",
+   "guideline": "请复制完整的优惠券代码，打开淘宝APP领取"
+  },
+  {
+   "title": "淘宝闪购-学生专场",
+   "coupon_code": "59 HU7405 666:/SkOM6akN0cV₴欢学生专享天天好价",
+   "guideline": "请复制完整的优惠券代码，打开淘宝APP领取"
+  }
+ ],
+ "京东隐藏外卖券列表": [
+  {
+   "title": "京东隐藏密令（大额）",
+   "coupon_code": "快乐干饭009",
+   "guideline": "打开京东APP, 【首页】的搜索框中输入：快乐干饭009 ，立即领取大额优惠券"
+  },
+  {
+   "title": "京东外卖-惊喜红包(主推)",
+   "coupon_code": "！GC1OVFlsVfsvKTjN！ ZH1997",
+   "guideline": "请复制完整的优惠券代码，打开京东APP领取"
+  },
+  {
+   "title": "京东外卖-新客爆品",
+   "coupon_code": "！U4L2V3eKfGtCjOUI！ CA1331",
+   "guideline": "请复制完整的优惠券代码，打开京东APP领取"
+  },
+  {
+   "title": "京东外卖-高Y品质会场",
+   "coupon_code": " ！IC9aaBzIMy1GnGUS！ CA3576",
+   "guideline": "请复制完整的优惠券代码，打开京东APP领取"
+  },
+  {
+   "title": "京东外卖-夜宵专场",
+   "coupon_code": "！EBoIfAjv2YOvG3Uu！ ZH9112",
+   "guideline": "请复制完整的优惠券代码，打开京东APP领取"
+  }
+ ],
+ "扫码领取/H5网页跳转领取": [
+  {
+   "title": "美团优惠券领取页",
+   "coupon_url": "https://h5.sichuanyunzhan.com/pages_single/meiTuan/index?platform=singlePage&pid=e467cdcafe2b1791cdfc&accountsId=nEjX0zy4Zmyq",
+   "coupon_qrcode_img_url": "https://moontai-static.oss-cn-shenzhen.aliyuncs.com/meituan-614d8c70-26c5-43bc-9e91-4468651709e8.png",
+   "guideline": "点击链接下单(建议用微信打开)，或使用微信扫描二维码下单（单单享优惠）"
+  },
+  {
+   "title": "饿了么/淘宝闪购优惠券领取页",
+   "coupon_url": "https://h5.sichuanyunzhan.com/pages_single/hungry/index?platform=singlePage&pid=e467cdcafe2b1791cdfc&accountsId=nEjX0zy4Zmyq",
+   "coupon_qrcode_img_url": "https://moontai-static.oss-cn-shenzhen.aliyuncs.com/taobao-9dd25c45-2e2c-451d-af71-a502f815de16.png",
+   "guideline": "点击链接下单(建议用微信打开)，或使用微信扫描二维码下单（单单享优惠）"
+  }
+ ],
+ "查找更多优惠券": {
+  "title": "更多类型优惠券（外卖、电影、快递、旅游、打车)",
+  "coupon_h5_qrcode_img_url": "https://moontai-static.oss-cn-shenzhen.aliyuncs.com/qrcode_for_gh.jpg",
+  "guideline": "可以使用微信扫码后领券。关注不迷路，天天领券！"
+ }
+}
